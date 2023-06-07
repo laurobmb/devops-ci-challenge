@@ -17,12 +17,21 @@ steps:
 
 - script: |
     npm install
-    npm run lint
-    npm run prettier  
-    npm run test      
     npm run build
   displayName: 'npm install and build'
 
+- script: |
+    npm run lint
+  displayName: 'npm lint'
+
+- script: |
+    npm run prettier  
+  displayName: 'npm prettier'
+
+- script: |
+    npm run test  
+  displayName: 'npm test'
+  
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
