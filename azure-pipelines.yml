@@ -20,13 +20,13 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-#- script: |
-#    npm run lint
-#  displayName: 'npm lint'
+- script: |
+    npm run lint
+  displayName: 'npm lint'
 
-#- script: |
-#    npm run prettier  
-#  displayName: 'npm prettier'
+- script: |
+    npm run prettier  
+  displayName: 'npm prettier'
 
 - script: |
     npm run test  

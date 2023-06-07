@@ -1,9 +1,11 @@
-FROM quay.io/lagomes/14-alpine:v1
+FROM node:15
 WORKDIR /opt/app-root/src
 COPY . /
-RUN mkdir /tmp/data
+RUN npm --version
 RUN npm install
-EXPOSE 8080
-USER 1001
+RUN npm run build
+RUN npm run lint
+#RUN npm run prettier
+EXPOSE 3000
 CMD [ "npm", "start" ]
  
