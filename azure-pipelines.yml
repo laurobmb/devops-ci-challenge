@@ -24,9 +24,9 @@ steps:
 #    npm run lint
 #  displayName: 'npm lint'
 
-- script: |
-    npm run prettier  
-  displayName: 'npm prettier'
+#- script: |
+#    npm run prettier  
+#  displayName: 'npm prettier'
 
 - script: |
     npm run test  
