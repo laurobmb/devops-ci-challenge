@@ -20,7 +20,7 @@ steps:
     npm run lint
     npm run prettier  
     npm run test      
-    npm run buildssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss 
+    npm run build
   displayName: 'npm install and build'
 
 - task: PublishBuildArtifacts@1
